@@ -1,0 +1,17 @@
+<html lang = "en">
+    <head>
+
+    </head>
+    <body>
+        <caption>Employee Details</caption>
+        <table>
+            <tr>
+            <th>EMPID</th>
+            <th>ENAME</th>
+            <th>Designation</th>
+            <th>Salary</th>
+            </tr>
+            
+        </table>
+    </body>
+</html>

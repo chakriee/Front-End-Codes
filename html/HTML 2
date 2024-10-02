@@ -1,0 +1,45 @@
+<!Document html>
+<HTML lang= "en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+        <caption>Product details</caption>
+        <table border="1px solid">
+            <thead>
+                <tr>
+                <th>pid</th>
+                <th>pname</th>
+                <th>price</th>
+            </thead>
+                <tbody>
+                    <tr>
+                    <td>222</td>
+                    <td>dove</td>
+                    <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>333</td>
+                        <td>z</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>444</td>
+                        <td>V</td>
+                        <td rowspan="2">22</td>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">total</th>
+                        <th>55</th>
+                    </tr>
+                </tfoot>
+        </table>
+    </body>
+</HTML>
+          
+            
+
+
