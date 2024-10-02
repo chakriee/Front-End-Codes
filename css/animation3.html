@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 800px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border: 5px solid black;
+            border-radius: 50%;
+            animation-name: photos;
+            animation-duration: 4s;
+            animation-iteration-count: infinite
+            
+        }
+        @keyframes photos{
+            from{
+                transform:rotate(0deg);
+                background-image: url(./Img1.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover
+
+            }
+            to{
+                transform: rotate(360deg);
+                background-image: url(./Img4.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

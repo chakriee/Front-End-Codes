@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(63, 57, 57);
+            overflow: hidden;
+        }
+        .sphere-container{
+            perspective: 1000px;
+        }
+        .sphere{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate-sphere 10s infinite linear;
+        }
+        .sphere::after,.sphere::before{
+            position: absolute;
+            content: "";
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: blanchedalmond;
+            opacity: 0.2;
+        }
+        .sphere::before{
+            transform: rotateX(90deg);
+        }
+        .sphere::after{
+            transform: rotateY(90deg);
+        }
+        @keyframes rotate-sphere {
+            from{
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sphere-container">
+        <div class="sphere"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 600px;
+            width: 100%;
+            background-color: rgb(80, 21, 80);
+            border: 2px solid black;
+        }
+        .box{
+            height: 50px;
+            width: 200px;
+            text-align: center;
+            background-color: rgb(149, 123, 172);
+            color: black;
+            font-size: 30px;
+            margin-top: 30px;
+            transition-property: width;
+            transition-duration: 5s;
+            border: 2px solid black;
+        }
+        #box1:hover{
+            transition-timing-function: linear;
+            width: 100%;
+        }
+        #box2:hover{
+            transition-timing-function: ease;
+            width: 100%;
+        }
+        #box3:hover{
+            transition-timing-function: ease-in;
+            width: 100%;
+        }
+        #box4:hover{
+            transition-timing-function: ease-out;
+            width: 100%;
+        }
+        #box5:hover{
+            transition-timing-function: ease-in-out;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="box" id="box1">linear</div>
+        <div class="box" id="box2">ease</div>
+        <div class="box" id="box3">ease-in</div>
+        <div class="box" id="box4">ease-out</div>
+        <div class="box" id="box5">ease-in-out</div>
+    </div>
+</body>
+</html>

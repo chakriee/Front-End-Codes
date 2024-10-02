@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black ;
+            display: inline-block;
+        }
+
+        #box1{
+            background-image: conic-gradient(red,green,blue);
+        }
+        #box2{
+            background-image: conic-gradient(red 20%, blue 20%, green);
+        }
+        #box4{
+            background-image: conic-gradient(red 0deg 45deg, indigo 45deg 90deg, green 90deg 135deg, blue 135deg 180deg, grey 180deg 225deg, black 225deg 270deg, palegreen 270deg 315deg,yellow 315deg 350deg);
+        }
+        #box5{
+            background-image: repeating-conic-gradient(red 0deg 45deg, indigo 45deg 90deg, green 90deg 135deg, blue 135deg 180deg, grey 180deg 225deg, black 225deg 270deg, palegreen 270deg 315deg,yellow 315deg 350deg);
+        }
+        #box6{
+            border-radius: 50%;
+            background-image: repeating-conic-gradient();
+        }
+        #box8{
+            background-image: linear-gradient(180deg,orange 40%,white 40%, green );
+        }
+        #box9{
+            border: none;
+            margin-top: 25px;
+            margin-left:25px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-image: repeating-conic-gradient(white 0deg 7deg, blue 7deg 14deg);
+        }
+    </style>
+    </head>
+      <body>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+        <div class="box" id="box7"></div>
+        <div class="box" id="box8">
+            <div class="box" id="box9"></div>
+        </div>
+        
+        
+      </body>
+</html>

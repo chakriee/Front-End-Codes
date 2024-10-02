@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<HTML lang= "en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div ~p{
+            /*Child Selector*/
+            background-color: rgb(239, 224, 224);
+        }
+        section > p{
+            /* Sibling Selector*/
+            background-color: blue;
+          }
+    </style>
+    </head>
+      <body>
+        <h1>Child Selector</h1>
+        <div>
+            <p>Child1</p>
+            <h1>Heading1</h1>
+            <p>Child2</p>
+            <section>
+                <p>Child</p>
+            </section>
+            <p>child3</p>
+        </div>
+        <p>Adopted child</p>
+      </body>
+</HTML>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: #2874f0;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows:auto;
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+            color: white;
+        }
+        
+        #login{
+            color: #2874f0;
+            background-color: white;
+            width: 150px;
+            height: 35px;
+            position: relative;
+            top: 11px;
+            left: 3px;
+            font-weight: bolder;
+            font-family:'Inter', '-apple-system', Helvetica, Arial, sans-serif;
+        }
+        ul{
+            display: flex;
+            text-decoration: none;
+            justify-content:space-evenly ;
+            list-style-type: none;
+        }
+        nav a{
+            margin-left: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        input{
+            margin-top: 20px;
+            margin-left: 5px;
+            height: 20px;
+        }
+        .items{
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid black;
+            font-weight: 800px;
+            font-family: 'Inter', '-apple-system', Helvetica, Arial, sans-serif;
+        }
+        .items p:hover{
+            color: #2874f0;
+        }
+        .main{
+            display: inline-block;
+            height: 500px;
+            width: 300px;
+            background-color: #2874f0;
+            position: relative;
+            top: 50px;
+            left: 100px;
+            color: white;
+            font-family: 'Inter', '-apple-system', Helvetica, Arial, sans-serif;
+        }
+        .A{
+           margin-left: 40px;
+           margin-right: 10px;
+        }
+        .right{
+            display: inline-block;
+            border: 1px solid black;
+            height: 497px;
+            width:300px;
+            margin-left: 300px;
+            position: relative;
+            top: -276px;
+        }
+        #b1{
+            display: flex;
+            justify-content: center;
+        }
+        .number{
+            padding: 8px 10px 10px;
+            width: 100%;
+            color: #000;
+            font-size: inherit;
+            background: #fff; 
+            border: none;
+            border-bottom: 1px solid #e0e0e0;
+            width: auto;
+            position: relative;
+            left: 50px;
+        }
+        #button{
+            height: 40px;
+            width: 300px;
+            position: absolute;
+            top: 100px;
+            left:0px;
+            color: white;
+            background-color: darkorange;
+        }
+        #img{
+            height: 30px;
+            width: 100px;
+            position: relative;
+            top: 5px;
+        }
+        #add{
+            position: relative;
+            top: 150px;
+        }
+        .footer{
+            margin-top: 100px;
+            background-color:  #172337;
+            height:30vh;
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+            grid-template-rows: 10% 80% 10%;
+            color: rgb(105, 101, 101);
+        }
+        .explore{
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+            right: 100px;
+            top: 30px;
+            color: white;
+        }
+        .plus {
+            text-decoration: none;
+            color: #ffe500;
+            font-weight: 500;
+            margin-right: 2px;
+            }
+        #search{
+            width: 300px;
+            height: 50px;
+            position: relative;
+            bottom: 10px;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">
+        <img id="img" src="flipkartlogo.png">
+        <a class="explore" href="/plus">Explore 
+            <span class="plus">Plus</span>
+            <img width="10" src="plus.png">
+        </a>
+        <input id="search" type="search">
+        <button id="login" type="button">Login</button>
+            <nav id="n">
+                <ul>
+                    <li><a href="#">Become a Seller</a></li>
+                    <li><a href="#">More</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+           </nav>
+        </div>
+    </div>
+    <div class="items">
+        <p>Electronics</p>
+        <p>TVs & Appliances</p>
+        <p>Men</p>
+        <p>Women</p>
+        <p>Kids</p>
+        <p>Home</p>
+        <p>Sports</p>
+        <p>Flights</p>
+    </div>
+    <div class="main">
+        <div class="A"><h1>Login</h1>
+        <p>Get access to your Orders, Wishlist and Recommendations</p>
+        <img id="add" src="add.png">
+        </div>
+        <div class="right" id="b1">
+            <input autocomplete="off" type="text" class="number" value="">
+            <p id="term">By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</p>
+            <button id="button" type="button">Request OTP</button>
+        </div>
+    </div>
+    <div class="footer">About</div>
+</body>
+</html>

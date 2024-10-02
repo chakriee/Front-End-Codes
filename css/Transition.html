@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 700px;
+            display: flex;
+            justify-content: center;
+        }
+        #parent{
+            height: 600px;
+            width: 600px;
+            display: flex;
+            background-color: grey;
+            opacity: 0.2px;
+        }
+        #child{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            transition-duration: 10s;
+            line-height: 200px;
+            transition-timing-function: linear;
+            transition-property: width,height;
+            transition-delay: 5s;
+        }
+        #child:hover{
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">Transition</div>
+    </div>  
+</body>
+</html>

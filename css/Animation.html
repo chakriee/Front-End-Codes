@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 700px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent{
+            height: 600px;
+            width: 800px;
+            border: 4px solid black;
+            background-color: indigo;
+        }
+        #ball{
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            background-color: white;
+            border-radius: 50%;
+            margin-left: 290px;
+            position: relative;
+            animation-name: ball;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+
+        }
+        #box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 0 auto;
+            background-color: rgb(127, 81, 170);
+        }
+        @keyframes ball{
+            0%{
+                top: 0px;
+                left: 200px;
+                background-color: blue;
+                position: relative;
+            }
+            25%{
+                top: 0px;
+                left: 200px;
+                background-color: pink;
+                position: relative;
+            }
+            50%{
+                top: 250px;
+                left: 205px;
+                background-color: green;
+                position: relative;
+            }
+            75%{
+                top: 250px;
+                left: -50px;
+                background-color: red;
+            }
+            100%{
+                top: 0px;
+                left: -50px;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="ball"></div>
+        <div id="box"></div>
+    </div>
+</body>
+</html>

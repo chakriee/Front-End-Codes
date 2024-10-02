@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+            grid-template-rows: 10% 80% 10%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: black;
+            font-size: 1rem;
+            border:1px solid black;
+        }
+        .header{
+            background-color: rgb(97, 191, 160);
+            grid-column: 1/4;
+            grid-row: 1/2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+        }
+        .left{
+            color: black;
+            background-color: lavender;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            display: flex;
+            align-items: center;
+        }
+        .main{
+            background-color: bisque;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .right{
+            color: black;
+            background-color: lavender;
+            grid-column: 3/4;
+            grid-row:2/3;
+            display: flex;
+            align-items: center;
+        }
+        .footer{
+            background-color:  rgb(97, 191, 160);
+            grid-column: 1/4;
+            grid-row:3/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">
+            <p>Header</p>
+        </div>
+        <div class="left">Left Menu</div>
+        <div class="main">
+            <div class="main_img">
+                <img src="A.jpg" alt="" height="300px" width="300px">
+            </div>
+            <div class="main_content">
+                <p>content</p>
+            </div>
+        </div>
+        <div class="right">Right Menu</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

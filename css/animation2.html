@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 700px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+            animation-name: color1;
+            animation-duration: 4s;
+            position: relative;
+            animation-iteration-count: infinite;
+        }
+        @keyframes color1 {
+            14.28%{
+                background-color: red;
+                top: 0px;
+            }
+            28.56%{
+                background-color: orange;
+                bottom: 200px;
+            }
+            42.84%{
+                background-color: yellow;
+                left: 210px;
+            }
+            57.12%{
+                background-color: green;
+                top: 200px;
+            }
+            71.40%{
+                background-color: blue;
+                
+            }
+            84.64%{
+                background-color: indigo;
+            }
+            100%{
+                background-color: grey;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

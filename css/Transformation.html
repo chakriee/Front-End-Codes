@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 1px solid ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        #child{
+            height: 300px;
+            width: 300px;
+            background-image: url(./Img1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*transform: rotate(45deg);*/
+            transform: rotateX(45deg);
+            transform: rotateY('angle');
+            transform: rotateZ('angle');
+            transform: scale(0.5);
+            transform: scaleX(0.5);
+            transform: scaleY();
+            /*transform scaleZ doesn't work*/
+            transform: scaleZ();
+            transform: skew(45deg);
+            transform: skewX(45deg);
+            transform: skewY(45deg);
+            transform: rotate3d(1,1,1,45deg);
+
+        }
+        #parent{
+            height: 300px;
+            width: 300px;
+            background-color: grey;
+            border: 2px solid black;
+            opacity: 0.2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="chid"></div>
+    </div>
+</body>
+</html>
