@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //our browser is support to webworkeror not
+        if(window.Worker){
+            //load the js file
+            let thread1= new Worker("sub.js");
+            //send the data to the sub.js file
+            thread1.postMessage(10);
+            //receive response
+            thread1.onmessage=function(event){
+                let res=event.data;
+                console.log(res);
+
+                let thread2= new Worker("add.js");
+                thread2.postMessage(res);
+                thread2.onmessage=function(event){
+                    let res1 = event.data;
+                    console.log(res1);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

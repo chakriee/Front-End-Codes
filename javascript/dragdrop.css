@@ -1,0 +1,33 @@
+.container{
+    height: 600px;
+    width: 1000px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#left{
+    height: 300px;
+    width: 200px;
+    background-color: rgb(127, 102, 150);
+    border:2px solid black;
+}
+.list{
+    height: 40px;
+    width: 150px;
+    background-color: aliceblue;
+    border:2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-left:25px;
+    cursor: grab;
+}
+#right{
+    height: 300px;
+    width: 200px;
+    background-color: rgb(59, 16, 98);
+    margin-top: 100px;
+    border: 2px solid black;
+}

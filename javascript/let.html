@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //reinitialization
+        //reinitialization is possible in terms of let keyword
+        let a=20;
+        a=20;
+        console.log(a);//20
+
+        //redeclaration
+        //redeclaration not possible
+        let b=20;
+        //let b=30;
+        console.log(b);
+
+        //scope of the variable
+        //block scope of variable
+        console.log("start");
+        if(true)
+    {
+        let c=50;
+        console.log(c);
+    }
+    //console.log(c);
+
+    //hositing
+    //hoisting its not possible
+    host="apple"
+    let host;
+    console.log(host);
+    </script>
+</body>
+</html>

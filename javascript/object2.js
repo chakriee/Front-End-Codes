@@ -1,0 +1,13 @@
+let baby= new Object();
+baby.color="white+black";
+baby.weight="4KG";
+baby.name="papu";
+baby.height="2.3m";
+console.log("by using new keyword");
+console.log(baby);
+console.log(baby.weight);
+baby.fathername="bada papu";
+console.log(baby.fathername);
+console.log(baby);
+let keys = Object.keys(baby);
+console.log(keys);

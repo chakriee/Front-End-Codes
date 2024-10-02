@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //constructor function
+        function Class1(){
+            this.var1="hello";
+            this.fun=()=>{
+                document.write("function execution <br>");
+            }
+        }
+        let obj1 = new Class1();
+        document.write(obj1.var1,"<br>");
+        obj.fun();
+
+        //create a class with two variables and two functions
+        //by using return
+        function Class2(){
+            this.var_one="hii";
+            this.var_two="world";
+
+            this.fun_one = function(){
+                return this.var_one;
+            }
+            this.fun_two = function(){
+                return this.var_two;
+            }
+        }
+        let obj2 = new Class2();
+        let output=obj2.fun_one();
+        document.write(output,"<br>");
+        let op2=obj2.fun_two();
+        document.write(op2,"<br>");
+
+        //dynamic input by using prototype
+        //prototyping is referriing to the constructor function
+        function f3(){}
+        f3.prototype.var_three="welcome to india";
+        f3.prototype.var_four="welcome to bangalore";
+        let obj3=new f3();
+        document.write(obj3.var_three,"<br>", obj3.var_four,"<br>");
+
+        //create a function by using  prototype add three variables
+        //add a function by using prototype
+        function f4(){}
+        f4.prototype.name=function(){
+            document.write("function prototype");
+        }
+        let obj4=new f4();
+        obj.name();
+
+        //constructor chaining 
+        //inheritance : parent-child relationship
+        //inheritance is parent properties acquire inside in child
+        function f5(){}
+        f5.prototype.var_five="radha";
+        function f6(){}
+        f6.prototype=Object.create(f5.prototype);
+        f6.prototype.var_six="krishna";
+        let obj6=new f6();
+        document.write(obj6.var_five,"<br>",obj6.var_six,"<br>");
+    </script>
+</body>
+</html>

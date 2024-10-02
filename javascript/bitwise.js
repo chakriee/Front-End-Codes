@@ -1,0 +1,14 @@
+let num1 = 5;
+let num2 = 3;
+let num3 = 7;
+let num4 = 0;
+console.log(~num1);
+console.log(~num2);
+console.log(~num3);
+console.log(~num4);
+console.log(num1&num2);
+console.log(num1|num2);
+console.log(num1^num2);
+console.log(num1<<num2);
+console.log(num1<<1);
+console.log(num1>>1);

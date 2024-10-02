@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1st way of declaration (first declare the variable name and later assign the value)
+        var a;
+        a=10;
+        console.log(a);
+        //2nd way of declaration (declare the variable and assign the value in one line )
+        var b=10;
+        console.log(b);
+
+        //reinitialization
+        //reinitialization its possible in terms of var variabla
+        a=20
+        console.log(a);//20 (updated variable value)
+
+        //redeclaration
+        //redeclaration is possible in terms of var variable
+        var a=30;
+        console.log(a);
+
+        //scope of variable
+        //is global scope we can access anywhere inside code
+        console.log("start");
+        if(true)
+    {
+        var c=100;
+        console.log(c);
+    }
+    console.log(c);
+
+    //hoisting
+    //var hoisting its possible in terms of var
+    hoisting="horse";
+    var hosting;
+    console.log(hosting);
+
+    </script>
+</body>
+</html>

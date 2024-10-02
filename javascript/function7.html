@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f13(param1){
+            return "welcome to goa "+ `${param1}`;
+        }
+        let output = f13(" satya");
+        document.write(output,"<br>");
+        let output2=f13(" archana");
+        document.write(output2,"<br>");
+
+        function f14(){
+            return 10;
+        }
+        let op1 = f14();
+        document.write("mutiplication of two numbers" + op1*op1, "<br>");
+
+        let add = (num1,num2)=>{
+            return num1+num2;
+        }
+        let first = add(10,20);
+        document.write(first,"<br>");//30
+        let second = add(first,50);
+        document.write(second,"<br>");//80
+
+        //retruning boolean value
+        function main(){
+            return false;
+        }
+
+        let third = main();
+        third?document.write("java <br>"):document.write("html <br>");
+        console.log(third);
+
+        //returning the array
+        function main1(){
+            return [10,20,30,40,50,60];
+        }
+
+        let a1=main1();
+        a1.forEach((Element,index)=>{
+            document.write(Element,"<br>");
+        })
+
+        //create a function by using function expression return array and iterate by using for of loop
+        let fe1 = function(){
+            return [100,200,300,400,500];
+        }
+
+        let op2=fe1();
+        for(i of op2){
+            document.write(i, "<br>");
+        }
+
+        //create a arrow function return array and iterate by using for in loop
+        let fa2=()=>{
+            return [1000,2000,3000,4000];
+        }
+        let op3=fa2();
+        for(i in op3){
+            document.write(op3[i],"<br>");
+        }
+
+        //return object
+        function fun(){
+            return {
+                "key1" : "value1",
+                "key2" : "value2",
+                "key3" : "value3",
+                "key4" : "value4"
+            }
+        }
+        let op4=fun();
+        document.write(op4.key1,op4.key2,op4.key3,op4.key4,"<br>");
+    </script>
+</body>
+</html>
